@@ -18,6 +18,9 @@ function startGame() {
     changeVisibility();
     rightOne = getRandomNumber(0, 2);
     initValues();
+    redValueR = getRandomNumber(0, 255);
+    greenValueR = getRandomNumber(0, 255);
+    blueValueR = getRandomNumber(0, 255);
     initColors();
     console.log(rightOne);
     document.getElementById("gui").innerHTML = `
