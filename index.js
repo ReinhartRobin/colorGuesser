@@ -29,6 +29,9 @@ function startGame() {
 function resume() {
     rightOne = getRandomNumber(0, 2);
     initValues();
+    redValueR = getRandomNumber(0, 255);
+    greenValueR = getRandomNumber(0, 255);
+    blueValueR = getRandomNumber(0, 255);
     initColors();
     console.log(rightOne);
     document.getElementById("gui").innerHTML = `
@@ -49,9 +52,6 @@ function initColors() {
 }
 
 function initValues() {
-    redValueR = getRandomNumber(0, 255);
-    greenValueR = getRandomNumber(0, 255);
-    blueValueR = getRandomNumber(0, 255);
     redValue1 = getRandomNumber(0, 255);
     greenValue1 = getRandomNumber(0, 255);
     blueValue1 = getRandomNumber(0, 255);
