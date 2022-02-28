@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorGuesser</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="content">
+                <h1>Color Guesser</h1>
+                <h2>type on the color that you think is right</h2>
+                <div id="hr"></div>
+            </div>
+        </div>
+        <div class="randomColor">
+            <div id="gui">
+                <button id="startButton" onclick="startGame()">START</button>
+            </div>
+        </div>
+        <div class="color1">
+            <div class="colorContent" id="color1" onclick="check(0)"></div>
+        </div>
+        <div class="color2">
+            <div class="colorContent" id="color2" onclick="check(1)"></div>
+        </div>
+        <div class="color3">
+            <div class="colorContent" id="color3" onclick="check(2)"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
